@@ -10,13 +10,9 @@ clear
 if [ $numb = "1" ]
 then
 	pkg install python
-	pkg install dos2unix
 	cp ~/Spymer_Lite_Edition/main.py /data/data/com.termux/files/usr/bin/spymer
-	dos2unix /data/data/com.termux/files/usr/bin/spymer
-	chmod -R 777 ~/spymer
-	chmod 777 /data/data/com.termux/files/usr/bin/spymer
 	clear
-	echo "Готово! (Чтобы запустить впишите spymer)"
+	echo "Готово! (Чтобы запустить впишите python main.py)"
 else
 	if [ $numb = "2" ]
 	then
@@ -27,23 +23,17 @@ else
 		else
 			apt install python3 python3-pip dos2unix
 			cp ~/Spymer_Lite_Edition/main.py /usr/bin/spymer
-			dos2unix /usr/bin/spymer
-			chmod 777 /usr/bin/spymer
-			chmod -R 777 ~/spymer
 			clear
-			echo "Готово! (Чтобы запустить впишите spymer)"
+			echo "Готово! (Чтобы запустить впишите python main.py)"
 		fi
 	else
 		if [ $numb = "3" ] 
 		then
 			apk add python
 			apk add python3
-			apk add dos2unix
 			cp ~/Spymer_Lite_Edition/main.py /usr/bin/spymer
-			dos2unix /usr/bin/spymer
-			chmod 777 /usr/bin/spymer
 			clear
-			echo "Готово! (Чтобы запустить впишите spymer)"
+			echo "Готово! (Чтобы запустить впишите python main.py)"
 		else
 			clear
 			echo "Некорректный ввод"
