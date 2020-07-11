@@ -10,7 +10,7 @@ if [ $numb = "1" ]
 then
 	pkg install python
 	pkg install dos2unix
-	cp ~/Spymer_Lite_Edition-master/main.py /data/data/com.termux/files/usr/bin/spymer2
+	cp ~/Spymer_Lite_Edition/main.py /data/data/com.termux/files/usr/bin/spymer2
 	dos2unix /data/data/com.termux/files/usr/bin/spymer2
 	chmod -R 777 ~/spymer2
 	chmod 777 /data/data/com.termux/files/usr/bin/spymer2
@@ -24,7 +24,7 @@ else
 			exit
 		else
 			apt install python3 python3-pip dos2unix
-			cp ~/Spymer_Lite_Edition-master/main.py /usr/bin/spymer2
+			cp ~/Spymer_Lite_Edition/main.py /usr/bin/spymer2
 			dos2unix /usr/bin/spymer2
 			chmod 777 /usr/bin/spymer2
 			chmod -R 777 ~/spymer2
@@ -36,7 +36,7 @@ else
 			apk add python
 			apk add python3
 			apk add dos2unix
-			cp ~/Spymer_Lite_Edition-master/main.py /usr/bin/spymer2
+			cp ~/Spymer_Lite_Edition/main.py /usr/bin/spymer2
 			dos2unix /usr/bin/spymer2
 			chmod 777 /usr/bin/spymer2
 			echo "Готово! (Чтобы запустить впишите spymer2)"
