@@ -791,9 +791,10 @@ def MAIN():
         
     except ModuleNotFoundError:
         os.system('cls' if os.name=='nt' else 'clear')
-        print("Установить недостающие библиотеки? []1")
+        print("Установить недостающие библиотеки? [y/n]")
         install = input("Spymer Lite > ")
-        os.system("python -m pip install requests colorama proxyscrape")
+        if (install = y):
+            os.system("python -m pip install requests colorama proxyscrape")
 
         MAIN()
 MAIN()
