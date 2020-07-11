@@ -6,6 +6,7 @@ echo "1) Termux"
 echo "2) Другой Unix"
 echo "3) iSH"
 read numb
+clear
 if [ $numb = "1" ]
 then
 	pkg install python
@@ -14,6 +15,7 @@ then
 	dos2unix /data/data/com.termux/files/usr/bin/spymer2
 	chmod -R 777 ~/spymer2
 	chmod 777 /data/data/com.termux/files/usr/bin/spymer2
+	clear
 	echo "Готово! (Чтобы запустить впишите spymer2)"
 else
 	if [ $numb = "2" ]
@@ -28,6 +30,7 @@ else
 			dos2unix /usr/bin/spymer2
 			chmod 777 /usr/bin/spymer2
 			chmod -R 777 ~/spymer2
+			clear
 			echo "Готово! (Чтобы запустить впишите spymer2)"
 		fi
 	else
@@ -39,8 +42,10 @@ else
 			cp ~/Spymer_Lite_Edition/main.py /usr/bin/spymer2
 			dos2unix /usr/bin/spymer2
 			chmod 777 /usr/bin/spymer2
+			clear
 			echo "Готово! (Чтобы запустить впишите spymer2)"
 		else
+			clear
 			echo "Некорректный ввод"
 		fi
 	fi
